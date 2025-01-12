@@ -45,3 +45,10 @@ Fügt interaktive Funktionen hinzu:
 1. **Projekt klonen**:
    ```bash
    git clone https://github.com/dein-benutzername/speakeasy.git
+
+
+
+   📧 Kontakt
+	•	Autor: Philippe Champagne
+	•	E-Mail: philippe.fortnitepro@gmail.com
+	•	GitHub: philchamp2004
