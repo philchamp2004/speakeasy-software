@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sprachübersetzer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SpeakEasy</div>
+    <nav>
+      <a href="#">Produkte</a>
+      <a href="#">Funktionen</a>
+      <a href="#">Sicherheit</a>
+      <a href="#">Support</a>
+      <a href="#">Download</a>
+      <div class="language-select">
+        <button id="language-btn">Sprache wählen</button>
+      </div>
+    
+      <div id="language-widget" class="language-widget hidden">
+        <h3>Sprachen und Software herunterladen</h3>
+        <div class="language-options">
+          <div class="language-option">
+            <img src="path-to-windows-logo.png" alt="Windows" class="logo" />
+            <a href="path-to-windows-software.exe" class="download-button">Für Windows herunterladen</a>
+          </div>
+          <div class="language-option">
+            <img src="path-to-mac-logo.png" alt="MacOS" class="logo" />
+            <a href="path-to-macos-software.dmg" class="download-button">Für macOS herunterladen</a>
+          </div>
+          <div class="language-option">
+            <img src="path-to-linux-logo.png" alt="Linux" class="logo" />
+            <a href="path-to-linux-software.deb" class="download-button">Für Linux herunterladen</a>
+          </div>
+        </div>
+      </div>
+      
+
+      <button class="login-btn">Anmelden</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+
+      <div class="hero-content">
+        <h1>Sprache überwinden, Kommunikation erleichtern®</h1>
+        <button class="cta-btn"> Download for macOS or Windows</button>
+      
+      </div>
+      <div class="card-grid" id="cardGrid"></div>
+        
+    
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hinweisbereich -->
+      <div class="more-languages">
+        <p>... und noch viele weitere Sprachen möglich!</p>
+      </div>
+      <section class="translator-section">
+        <div class="translator-section">
+            <div class="translator-container">
+              <h2>Übersetzer</h2>
+              <div class="translator">
+                <!-- Eingabe -->
+                <div class="translator-input">
+                  <label for="input-language">Von:</label>
+                  <div class="language-select">
+                    <img id="input-flag" src="https://flagcdn.com/w40/us.png" alt="Flagge" />
+                    <select id="input-language">
+                      <option value="en" data-flag="https://flagcdn.com/w40/us.png">Englisch</option>
+                      <option value="de" data-flag="https://flagcdn.com/w40/de.png">Deutsch</option>
+                      <option value="fr" data-flag="https://flagcdn.com/w40/fr.png">Französisch</option>
+                      <option value="es" data-flag="https://flagcdn.com/w40/es.png">Spanisch</option>
+                    </select>
+                  </div>
+                  <textarea id="input-text" placeholder="Geben Sie Ihren Text ein..."></textarea>
+                  <div class="text-tools">
+                    <button id="copy-input" class="tool-btn">Copy</button>
+                    <button id="speak-input" class="tool-btn">🔊 Vorlesen</button>
+                  </div>
+                </div>
+          
+          
+               <!-- Ausgabe -->
+      <div class="translator-output">
+        <label for="output-language">Nach:</label>
+        <div class="language-select">
+          <img id="output-flag" src="https://flagcdn.com/w40/de.png" alt="Flagge" />
+          <select id="output-language">
+            <option value="de" data-flag="https://flagcdn.com/w40/de.png">Deutsch</option>
+            <option value="en" data-flag="https://flagcdn.com/w40/us.png">Englisch</option>
+            <option value="fr" data-flag="https://flagcdn.com/w40/fr.png">Französisch</option>
+            <option value="es" data-flag="https://flagcdn.com/w40/es.png">Spanisch</option>
+          </select>
+        </div>
+        <textarea id="output-text" placeholder="Übersetzung erscheint hier..." readonly></textarea>
+        <div class="text-tools">
+          <button id="copy-output" class="tool-btn">Copy</button>
+          <button id="speak-output" class="tool-btn">🔊 Vorlesen</button>
+        </div>
+      </div>
+    </div>
+    <button id="translate-btn">Jetzt übersetzen</button>
+  </div>
+</div>
+          
+              </div>
+            </div>
+          </section>
+      </div>
+      <div class="card-grid" id="cardGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SpeakEasy. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
