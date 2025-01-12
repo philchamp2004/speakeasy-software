@@ -1,3 +1,12 @@
+### **Hauptseite**
+![Hauptseite Screenshot](assets/main-page.png)
+
+
+
+
+
+
+
 # SpeakEasy - Sprachübersetzer
 
 SpeakEasy ist ein moderner, browserbasierter Sprachübersetzer, der Benutzerfreundlichkeit und Design kombiniert, um Sprachbarrieren zu überwinden. Das Projekt enthält eine elegante Benutzeroberfläche mit einem eingebauten Übersetzer, Download-Widget und weiteren interaktiven Funktionen.
