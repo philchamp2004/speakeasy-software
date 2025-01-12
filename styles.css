@@ -1,0 +1,343 @@
+/* Allgemeine Stile */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header nav .language-select button,
+  header nav .login-btn {
+    margin-left: 15px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f0f0f0;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .cta-btn {
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Grid Cards */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Stil für die Karten */
+  .card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 50px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Text unterhalb der Karte */
+  .card p {
+    margin: 10px 0 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Text für "Weitere Sprachen möglich" */
+  .more-languages {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #444;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+  .translator-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f7f9fc, #eef2f6);
+  }
+  
+  .translator-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+  }
+  
+  .translator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .language-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .language-select img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  textarea:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 6px rgba(255, 102, 0, 0.3);
+  }
+  
+  .text-tools {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tool-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    color: white;
+    background: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .tool-btn:hover {
+    background: #0056b3;
+  }
+  
+  #translate-btn {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2rem;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  #translate-btn:hover {
+    background: #cc5200;
+  }
+  
+  #translate-btn:active {
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    .translator {
+      grid-template-columns: 1fr;
+    }
+  
+    textarea {
+      grid-column: span 1;
+    }
+  
+    button#translate-btn {
+      grid-column: span 1;
+    }
+  
+    .translation-result {
+      grid-column: span 1;
+    }
+  }
+
+  
+
+  .language-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .language-select img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+  }
+
+
+
+  /* Standard-Hidden-Klasse */
+.hidden {
+    display: none;
+  }
+  
+  /* Widget-Styling */
+  .widget {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  /* Widget Inhalt */
+  .widget h3 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .download-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .download-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .download-btn {
+    display: block;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #d87d0a;
+  }
+  
+  /* Schließen-Button */
+  .close-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #aaa;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+
+ 
+
+
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
